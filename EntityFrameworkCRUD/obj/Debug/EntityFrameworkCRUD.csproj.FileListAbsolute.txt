@@ -1,0 +1,16 @@
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFrameworkCRUD.exe.config
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFrameworkCRUD.exe
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFrameworkCRUD.pdb
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFramework.dll
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFramework.xml
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.csprojAssemblyReference.cache
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.Form1.resources
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.formAddEditContact.resources
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.Properties.Resources.resources
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.csproj.GenerateResource.cache
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.csproj.CoreCompileInputs.cache
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.csproj.CopyComplete
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.exe
+D:\Programacion\Proyectos\EntityFrameworkCRUD\EntityFrameworkCRUD\obj\Debug\EntityFrameworkCRUD.pdb
