@@ -1,24 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EntityFrameworkCRUD
 {
-    public partial class formAddEditContact : Form
+    public partial class FormAddEditContact : Form
     {
-        ContactEntities contactEntities;
-        public formAddEditContact(Contact contact)
+        private readonly ContactEntities contactEntities;
+        public FormAddEditContact(Contact contact)
         {
             /* una vez llamado el form, se verifica si el contacto existe, en caso de que exista trae todos los datos, de lo contrario se puede crear uno */
             InitializeComponent();
             contactEntities = new ContactEntities();
-            if(contact == null)
+            if (contact == null)
             {
                 contactBindingSource.DataSource = new Contact();
                 contactEntities.Contacts.Add(contactBindingSource.Current as Contact);
@@ -30,9 +23,9 @@ namespace EntityFrameworkCRUD
             }
         }
 
-        private void formAddEditContact_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormAddEditContact_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(DialogResult == DialogResult.OK)
+            if (DialogResult == DialogResult.OK)
             {
                 if (String.IsNullOrEmpty(txtContactName.Text))
                 {

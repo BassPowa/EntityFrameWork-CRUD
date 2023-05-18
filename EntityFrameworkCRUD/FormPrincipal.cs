@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace EntityFrameworkCRUD
 {
-    public partial class Form1 : Form
+    public partial class FormPrincipal : Form
     {
         ContactEntities contactEntities;
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormPrincipal_Load(object sender, EventArgs e)
         {
             contactEntities = new ContactEntities();
             contactBindingSource.DataSource = contactEntities.Contacts.ToList();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
-            using(formAddEditContact formAddEditContact = new formAddEditContact(null))
+            using(FormAddEditContact formAddEditContact = new FormAddEditContact(null))
             {
                 if(formAddEditContact.ShowDialog() == DialogResult.OK)
                 {
@@ -35,14 +35,14 @@ namespace EntityFrameworkCRUD
             }
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        private void BtnEdit_Click(object sender, EventArgs e)
         {
             if(contactBindingSource.Current == null)
             {
                 return;
             }
 
-            using (formAddEditContact formAddEditContact = new formAddEditContact(contactBindingSource.Current as Contact))
+            using (FormAddEditContact formAddEditContact = new FormAddEditContact(contactBindingSource.Current as Contact))
             {
                 if (formAddEditContact.ShowDialog() == DialogResult.OK)
                 {
@@ -51,7 +51,7 @@ namespace EntityFrameworkCRUD
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void BtnDelete_Click(object sender, EventArgs e)
         {
             if(contactBindingSource.Current != null)
             {

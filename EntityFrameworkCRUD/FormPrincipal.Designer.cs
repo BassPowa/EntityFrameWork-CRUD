@@ -1,7 +1,7 @@
 ﻿
 namespace EntityFrameworkCRUD
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@ namespace EntityFrameworkCRUD
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // btnEdit
             // 
@@ -62,7 +62,7 @@ namespace EntityFrameworkCRUD
             this.btnEdit.TabIndex = 0;
             this.btnEdit.Text = "&Modificar";
             this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
             // 
             // btnAdd
             // 
@@ -72,7 +72,7 @@ namespace EntityFrameworkCRUD
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "&Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // dataGridView
             // 
@@ -126,7 +126,7 @@ namespace EntityFrameworkCRUD
             // 
             this.contactBindingSource.DataSource = typeof(EntityFrameworkCRUD.Contact);
             // 
-            // Form1
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,10 +137,10 @@ namespace EntityFrameworkCRUD
             this.Controls.Add(this.btnDelete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contactos";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactBindingSource)).EndInit();
             this.ResumeLayout(false);

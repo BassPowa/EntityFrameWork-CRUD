@@ -1,7 +1,7 @@
 ﻿
 namespace EntityFrameworkCRUD
 {
-    partial class formAddEditContact
+    partial class FormAddEditContact
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,13 @@ namespace EntityFrameworkCRUD
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtContactName = new System.Windows.Forms.TextBox();
+            this.contactBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.contactBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.contactBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +69,10 @@ namespace EntityFrameworkCRUD
             this.txtContactName.Name = "txtContactName";
             this.txtContactName.Size = new System.Drawing.Size(251, 20);
             this.txtContactName.TabIndex = 2;
+            // 
+            // contactBindingSource
+            // 
+            this.contactBindingSource.DataSource = typeof(EntityFrameworkCRUD.Contact);
             // 
             // label2
             // 
@@ -122,10 +126,6 @@ namespace EntityFrameworkCRUD
             this.txtAddress.Size = new System.Drawing.Size(251, 129);
             this.txtAddress.TabIndex = 2;
             // 
-            // contactBindingSource
-            // 
-            this.contactBindingSource.DataSource = typeof(EntityFrameworkCRUD.Contact);
-            // 
             // formAddEditContact
             // 
             this.AcceptButton = this.btnSave;
@@ -146,7 +146,7 @@ namespace EntityFrameworkCRUD
             this.Name = "formAddEditContact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar/Editar Contacto";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formAddEditContact_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAddEditContact_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.contactBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
